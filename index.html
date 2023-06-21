@@ -11,21 +11,46 @@
     }
     
     #Benutzername {
-        margin-left: 23px;
-        margin-right: 23px;
+        margin-left: 16px;
+        margin-right: 2px;
     }
     #Passwort {
-        
+        padding: 16px;
+    }
+    .container {
+        align-items: center;
+    }
+    .Login {
+    background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(65, 63, 63, 0.3);
+	margin: 150px auto;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 600px;
+    height:500px;
+    padding: 20px;
     }
 </style>
 
 <body>
+	<div class="container">
+		
+        <form class="Login">
+			
+        
+        <label for="Benutzername:"> Benutzername</label>
+        <input type="text" id="Benutzername" required>
 
-    <form>
-        <label id="Benutzername"> Benutzername</label>
-        <label if="Passwort"> Passwort </label>
-        <input id="Login"type=submit>Anmelden
+        <label for="Passwort:"> Passwort </label>
+        <input type="password" id="Passwort" required>
+
+        <input type=submit value="Anmelden">
     </form>
+    
+</div>
 
 </body>
 
