@@ -9,16 +9,11 @@
     .body {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-    
-    #Benutzername {
-        margin-left: 16px;
-        margin-right: 2px;
-    }
-    #Passwort {
-        padding: 16px;
-    }
     .container {
         align-items: center;
+        font-size: 16px;
+        width:640px;
+        height:480px;
     }
     .Login {
     background-color: #fff;
@@ -33,6 +28,53 @@
     height:500px;
     padding: 20px;
     }
+   label {
+        text-align: left;
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: 24px;
+   }
+  .Login {
+    display: flex;
+    flex-direction: column;
+    }
+    input[type="text"],
+input[type="password"] {
+    height:64px;
+    width: 520px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 16px;
+    margin-top: 24px;
+    font-size: 25px;
+}
+input[type="submit"] {
+    height:90px;
+    width:520px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 16px;
+    margin-top: 80px;
+    font-size: 25px;
+    background-color: #3a9960;
+    color: rgb(231, 205, 205);
+}
+input[type="submit"]:hover {
+    background-color: #d36710;  
+}
+.Forgot_password {
+    size: 16px;
+    width:20%;
+    height:15%;
+    margin-left:12px;
+    margin-top: 30px;
+    color:blue;
+    background-color: rgb(216, 216, 224);
+
+
+}
+
+
 </style>
 
 <body>
@@ -40,14 +82,19 @@
 		
         <form class="Login">
 			
+        <label for="Benutzername:"> Benutzername </label>
+        <input type="text" id="Benutzername" required> 
+   
         
-        <label for="Benutzername:"> Benutzername</label>
-        <input type="text" id="Benutzername" required>
 
         <label for="Passwort:"> Passwort </label>
         <input type="password" id="Passwort" required>
 
-        <input type=submit value="Anmelden">
+        <button class="Forgot_password" > Passwort vergessen?</button>
+    
+
+        <input type=submit value="Einloggen">
+    
     </form>
     
 </div>
